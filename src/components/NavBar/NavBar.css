@@ -1,0 +1,27 @@
+.Option {
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Option:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+.ActiveOption {
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.ActiveOption:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

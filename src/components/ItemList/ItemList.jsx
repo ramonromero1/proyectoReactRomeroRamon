@@ -1,13 +1,21 @@
 import Item from "../Item/Item";
+import { memo } from "react";
 
 const ItemList = ({ products }) => {
   return (
-    <div>
+    <div className="row">
       {products.map((prod) => {
-        return <Item key={prod.id} {...prod} />;
+        return (
+          <div
+            className="col-md-4 d-flex justify-content-center mb-3"
+            key={prod.id}
+          >
+            <Item {...prod} />
+          </div>
+        );
       })}
     </div>
   );
 };
 
-export default ItemList;
+export default memo(ItemList);
